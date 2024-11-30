@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <main class="product-card">
+      <figure class="product-card__image">
+        <picture>
+          <!-- Images for desktop screen -->
+          <source
+            class="product-card__image__desktop"
+            srcset="images/image-product-desktop.jpg"
+            media="(min-width: 768px)"
+          />
+          <!-- Images for mobile screen -->
+          <source
+            class="product-card__image__mobile"
+            srcset="images/image-product-mobile.jpg"
+            media="(max-width: 375px)"
+          />
+          <!-- Fallback image -->
+          <img
+            src="images/image-product-mobile.jpg"
+            alt="Gabrielle Essence Eau De Parfum"
+            width="686"
+            height="480"
+          />
+        </picture>
+      </figure>
+      <section class="product-card__details">
+        <h5 class="product-card__cathegory">PERFUME</h5>
+        <h1 class="product-card__title">Gabrielle Essence Eau De Parfum</h1>
+        <p class="product-card__description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge,Perfumer-Creator for the House of CHANEL.
+        </p>
+      </section>
+      <footer>
+        <div class="product-card__price-section">
+          <h2 class="product-card__current-price">$149.99</h2>
+          <h3 class="product-card__old-price"><del>$169.99</del></h3>
+        </div>
+        <button class="product-card__button">
+          <img
+            class="product-card__button-icon"
+            src="images/icon-cart.svg"
+            alt="Cart-icon"
+            width="15"
+            height="16"
+          />
+          <span class="product-card__button-text">Add to Cart</span>
+        </button>
+      </footer>
+    </main>
+  </body>
+</html>
